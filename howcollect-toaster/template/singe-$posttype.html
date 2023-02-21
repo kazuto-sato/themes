@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詳細投稿ページ</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="sass.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="slick/slick.css">
+</head>
+<body>
+    <div class="toppage-container">
+        <div class="top-header">
+            <div class="humburgar"><a href="#"><span></span><span></span><span></span></a></div>
+            <p class="header-title"><a>株式会社ハウコレ</a></p>
+            <form class="search">
+                <input type="search" placeholder="ドキュメント名などで検索"/>
+                <button type="submit" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <div class="home-profile-btn">
+                <a><img src="../image/IMG_7644.JPG"></a>
+            </div>
+        </div>    
+        <div class="article-main-body">
+            <ul class="side-nav">
+                <li class="go-home-btn side-li-box"><a href="#">
+                    <svg class="side-li-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+                    <p class="side-nav-name">ホーム</p>
+                </a></li>
+                <li class="go-recipe-btn side-li-box"><a href="#">
+                    <svg class="side-li-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.8 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"/></svg>
+                    <p class="side-nav-name">レシピ</p>
+                </a></li>
+                <li class="go-vocaburaly-btn side-li-box"><a href="#">
+                    <svg class="side-li-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/></svg>
+                    <p class="side-nav-name">用語集</p>
+                </a></li>
+                <li class="go-member-btn side-li-box"><a href="#">
+                    <svg class="side-li-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM512 256c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM256 272c39.8 0 72-32.2 72-72s-32.2-72-72-72s-72 32.2-72 72s32.2 72 72 72z"/></svg>
+                    <p class="side-nav-name">メンバー</p>
+                </a></li>
+            </ul>
+            <!--コンテンツ-->
+            <div class="single-page-wrap">
+                <div class="receipe-outline">
+                    <p class="pan">パンくず＞リスト</p>
+                    <div class="outline-title-wrap">
+                        <svg class="outline-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/></svg>
+                        <p class="outline-title">【インターン生向け】ログインするためのマスターアカウントについて、あああああああああああああああああああああああああ長くても平気らしい</p>
+                    </div>
+                    <ul class="outline">
+                        <li class="outline-list"><a href="#list-1"><span>1</span>マスターアカウントのid/pass</a></li>
+                        <li class="outline-list"><a href="#list-2"><span>2</span>マスターアカウントを作成した理由</a></li>
+                        <li class="outline-list"><a href="#list-3"><span>3</span>マスターアカウントの利用方法と権限付与</a></li>
+                        <li class="outline-list"><a href="#list-4"><span>4</span>マスターアカウントに関する注意事項</a></li>
+                    </ul>
+                    <div class="update-by"><a href="#">
+                        <img src="../image/IMG_7644.JPG" class ="column-author-image" style="max-width: 40px;">
+                        <p class="column-author">Mr ryopimo</p>
+                    </a></div>
+                </div>
+                <div class="receipe-content-wrap">
+                    <p class="receipe-title"></p>ここにレシピのタイトル</p>
+                    <p class="receipe-posted-date">2023/02/12</p>
+                    <img class="post-thumbnail" src="../image/shop.jpg">
+                    <div class="receipe-description">
+                        <p class="first-word"><svg style="width:25px;"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>はじめに</p>
+                        <p class="desc-headline">概要</p>
+                        <p class="desc-headline-content">Google系のサービスのアクセス権限がない問題が多々起きるのでそのための解決策としてマスターアカウントを作成しました。その使い方などを説明します。</p>
+                        <p class="desc-headline">こんな人に読んでほしい！</p>
+                        <p class="desc-headline-content">インターン生、社員</p>
+                        <p class="desc-headline">メモ</p>
+                        <p class="desc-headline-content">このマスターアカウントでも権限ない場合は上長に連絡してください。</p>
+                    </div>
+                    <div class="receipe-step">
+                        <div class="step-wrap" id="list-1">
+                            <p class="step-title"　><span>1</span>マスターアカウントのid/pass</p>
+                            <div class="receipe-content">
+                                id intern@howcollect.com<br>
+                                pass Wu4SyJZ5
+                            </div>
+                        </div>
+                        <div class="step-wrap" id="list-2">
+                            <p class="step-title"><span>2</span>マスターアカウントを作成した理由</p>
+                            <div class="receipe-content">
+                                入社時に下記のようなアドレスを作成していただきました。
+
+                                name.howcollect@gmail.com
+
+                                このアドレスはハウコレで働く間ずっと使うものになるので大切にしてください。
+
+                                業務を進めていく中で自分のアカウントだとアクセスできないスプレッドシートやドキュメントなどがでてくるでしょう。
+
+                                これはセキュリティ対策で会社内、もう少し正式に言うと＠howcollect.comのアドレスを持つ人にしか見せませんよ！という設定にしているからです。
+
+                                入社時に作成したアカウントは@gmail.comなので、会社内の人だけどアカウントが＠howcollect.comじゃないから見せられないよ！という状況なのです。
+
+                                じゃあ、どうすればいいの？
+
+                                ＠howcollect.comから自分のname.howcollect@gmail.comにアクセス権限を付与すれば見られるようになります！！！
+                            </div>
+                        </div>
+                        <div class="step-wrap"id="list-3">
+                            <p class="step-title"><span>3</span>マスターアカウントの利用方法と権限付与</p>
+                            <div class="receipe-content">
+                                まずは冒頭のid/passを使ってログインしてください。
+
+                                intern@howcollect.comにログインをしたら問題のURLを開きます。
+
+                                この時、アカウントがちゃんとintern@howcollect.comになっているかを確認してください。
+
+                                問題のURLを開いたら右上にある「共有」ボタンを押します。
+                            </div>
+                        </div>
+                        <div class="step-wrap" id="list-4">
+                            <p class="step-title"><span>4</span>マスターアカウントに関する注意事項</p>
+                            <div class="receipe-content">
+                                マスターアカウントは権限を付与するために作られたものです。
+
+                                皆さんが作業する時は必ず自分自身のname.howcollect@gmail.comで作業をするようにしてください。
+                                
+                                また私用アドレスには権限を付与しないようにしてください。
+                                
+                                わからないことなどあれば小林まで。よろしくお願いします。                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </div>    
+</body>
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<!-- slick js-->
+<script src="slick/slick.min.js"></script>
+<!--main.js-->
+<script src="js/main.js"></script>    
+</body>
+</html>
+
+
+
+
